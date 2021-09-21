@@ -59,7 +59,7 @@ __on_player_right_clicks_block(player, item_tuple, hand, block, face, hitvec) ->
 	global_radius = (global_radius + 1)%3;
 	diameter = 2*global_radius+1;
 
-	// print('hammer mode '+diameter+'x'+diameter);
+	print('hammer mode '+diameter+'x'+diameter);
 
 	l(from, to) = __get_block_from_to(pos(block), face);
 	particle_box('dust 0.8 0.1 0.1 1', from, to, 0.1)
